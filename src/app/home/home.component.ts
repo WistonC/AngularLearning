@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {HousingLocationComponent} from '../housing-location/housing-location.component';
-import {HousingLocation} from "../housingLocation";
+import {HousingLocation} from "../HousingLocation"
 
 @Component({
   selector: 'app-home',
@@ -16,7 +16,7 @@ import {HousingLocation} from "../housingLocation";
       </form>
     </section>
     <section class="results">
-      <app-housing-location></app-housing-location>
+      <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     </section>
   `,
   styleUrl: './home.component.css'
